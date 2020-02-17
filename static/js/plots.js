@@ -1,6 +1,6 @@
 function init() {
   var selector = d3.select("#selDataset");
-  d3.json("./static/data/samples.json").then((data) => {
+  d3.json("/static/data/samples.json").then((data) => {
     var sampleNames = data.names;
     sampleNames.forEach((sample) => {
       selector
